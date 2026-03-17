@@ -1,5 +1,6 @@
 import React from 'react'
 import { BsArrowRight } from "react-icons/bs";
+import { Link } from 'react-router-dom'
 
 const Hero = () => {
   return (
@@ -23,18 +24,20 @@ const Hero = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-wrap items-center gap-4 mt-15">
-                <button
-                    className='py-4 px-6 bg-[color:var(--text)] text-[color:var(--surface)] font-semibold flex items-center gap-2'
+                <Link
+                  to="/services"
+                  className="py-4 px-6 bg-[color:var(--text)] text-[color:var(--surface)] font-semibold flex items-center gap-2"
                 >
-                    Veiw Services
-                    <BsArrowRight size={20}  />
-                </button>
+                  View Services
+                  <BsArrowRight size={20} />
+                </Link>
 
-                <button
-                    className='py-4 px-6 bg-transparent text-[color:var(--text)] font-semibold flex items-center gap-2 border border-[color:var(--border)]'
+                <Link
+                  to="/work"
+                  className="py-4 px-6 bg-transparent text-[color:var(--text)] font-semibold flex items-center gap-2 border border-[color:var(--border)]"
                 >
-                    See My Work
-                </button>
+                  See My Work
+                </Link>
             </div>
 
         </div>
