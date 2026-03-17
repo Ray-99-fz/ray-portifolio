@@ -31,18 +31,18 @@ const personalityData = [
 
 const Personality = () => {
   return (
-    <section className='border-b border-white/20 bg-black'>
+    <section className='border-b border-[color:var(--border)] bg-[color:var(--bg)]'>
         <div className="px-4 md:px-6 py-22 md:py-25 w-full max-w-7xl m-auto">
             <div className="grid md:grid-cols-3 gap-5">
                 {personalityData.map((item, index) => (
-                    <div className="border text-white/70 border-white/20 bd-[#0f0f0f] p-10 ">
+                    <div className="border text-[color:var(--muted)] border-[color:var(--border)] bg-[color:var(--surface)] p-10 ">
                      
                         <div key={index} className="w-[90%] m-auto flex flex-col gap-4">
                             {iconMap[item.icon]}
-                            <h2 className='text-white font-bold text-2xl'>
+                            <h2 className='text-[color:var(--text)] font-bold text-2xl'>
                                 {item.title}
                             </h2>
-                            <p className='text-white/70 md:text-xl'>
+                            <p className='text-[color:var(--muted)] md:text-xl'>
                                 {item.desc}
                             </p>
                         </div> 

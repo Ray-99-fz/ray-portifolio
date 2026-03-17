@@ -6,19 +6,33 @@ import Target from '../components/home/Target'
 import Framework from '../components/home/Framework'
 import CTA from '../components/home/CTA'
 import Footer from '../components/Footer'
+import Reveal from '../components/Reveal'
+import PageTransition from '../components/PageTransition'
 
 
 const Home = () => {
   return (
-    <section>
+    <PageTransition>
+      <section>
         <Navbar />
-        <Hero />
-        <Personality />
-        <Target />
-        <Framework />
-        <CTA />
+        <Reveal>
+          <Hero />
+        </Reveal>
+        <Reveal>
+          <Personality />
+        </Reveal>
+        <Reveal>
+          <Target />
+        </Reveal>
+        <Reveal>
+          <Framework />
+        </Reveal>
+        <Reveal>
+          <CTA />
+        </Reveal>
         <Footer />
-    </section>
+      </section>
+    </PageTransition>
   )
 }
 

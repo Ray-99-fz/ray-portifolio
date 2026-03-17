@@ -36,9 +36,9 @@ const advantagesData = [
 
 const Advantages = () => {
   return (
-    <section className='border-b border-white/20 bg-[#0f0f0f]'>
+    <section className='border-b border-[color:var(--border)] bg-[color:var(--surface)]'>
         <div className="px-4 md:px-6 py-22 md:py-25 w-full max-w-7xl m-auto">
-            <h2 className='text-white font-bold text-2xl md:text-3xl lg:text-4xl text-center'>
+            <h2 className='text-[color:var(--text)] font-bold text-2xl md:text-3xl lg:text-4xl text-center'>
                 Competitive Advantage in Malawi
             </h2>
 
@@ -49,14 +49,14 @@ const Advantages = () => {
                 <div key={index} className="flex items-start gap-6">
     
                   {/* Accent Line */}
-                  <div className="w-[2px] bg-gray-400 self-stretch"></div>
+                  <div className="w-[2px] bg-[color:var(--border)] self-stretch"></div>
 
                   {/* Text Content */}
                   <div>
-                    <h3 className="text-lg md:text-xl  lg:text-2xl font-bold text-white mb-4">
+                    <h3 className="text-lg md:text-xl  lg:text-2xl font-bold text-[color:var(--text)] mb-4">
                       {item.title}
                     </h3>
-                    <p className="text-gray-400 text-lg">
+                    <p className="text-[color:var(--muted)] text-lg">
                       {item.text}
                     </p>
                   </div>

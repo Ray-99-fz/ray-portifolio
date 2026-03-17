@@ -26,17 +26,17 @@ const projectStructureData = [
 
 const Projectstructure = () => {
   return (
-        <section className='border-b border-white/20 bg-[#0f0f0f]'>
+        <section className='border-b border-[color:var(--border)] bg-[color:var(--surface)]'>
             <div className="px-4 md:px-6 py-15 w-full max-w-7xl m-auto">
-                <h4 className="uppercase md:text-lg text-center text-white/70">Every Project Follows This Structure</h4>
+                <h4 className="uppercase md:text-lg text-center text-[color:var(--muted)]">Every Project Follows This Structure</h4>
 
             <div className="grid md:grid-cols-5 gap-10 mt-10 p-3">
                 {projectStructureData.map((item, index) => (
                     <div key={index} className="flex flex-col justify-center items-center gap-5">
-                        <div className="w-12 h-12 rounded-full bg-black outline outline-white/20 text-white font-bold text-lg flex items-center justify-center">
+                        <div className="w-12 h-12 rounded-full bg-[color:var(--bg)] outline outline-[color:var(--border)] text-[color:var(--text)] font-bold text-lg flex items-center justify-center">
                             {index + 1}
                         </div>
-                        <h4 className='text-white font-bold text-lg'> {item.title} </h4>
+                        <h4 className='text-[color:var(--text)] font-bold text-lg'> {item.title} </h4>
                     </div>
                 ))}
             </div>

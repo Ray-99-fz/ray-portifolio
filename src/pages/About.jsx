@@ -9,21 +9,41 @@ import Framework from '../components/about/Framework'
 import Vision from '../components/about/Vision'
 import Trajectory from '../components/about/Trajectory'
 import Final from '../components/about/Final'
+import Reveal from '../components/Reveal'
+import PageTransition from '../components/PageTransition'
 
 const About = () => {
   return (
-    <section>
-      <Navbar />
-      <Aboutheader />
-      <Philosophy />
-      <Capabilities />
-      <Advantages />
-      <Framework />
-      <Vision />
-      <Trajectory />
-      <Final />
-      <Footer />
-    </section>
+    <PageTransition>
+      <section>
+        <Navbar />
+        <Reveal>
+          <Aboutheader />
+        </Reveal>
+        <Reveal>
+          <Philosophy />
+        </Reveal>
+        <Reveal>
+          <Capabilities />
+        </Reveal>
+        <Reveal>
+          <Advantages />
+        </Reveal>
+        <Reveal>
+          <Framework />
+        </Reveal>
+        <Reveal>
+          <Vision />
+        </Reveal>
+        <Reveal>
+          <Trajectory />
+        </Reveal>
+        <Reveal>
+          <Final />
+        </Reveal>
+        <Footer />
+      </section>
+    </PageTransition>
   )
 }
 

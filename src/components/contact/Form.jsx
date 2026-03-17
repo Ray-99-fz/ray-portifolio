@@ -67,7 +67,7 @@ const Form = () => {
             <div className="flex-1">
                 <label 
                 htmlFor="name" 
-                className="block text-white font-semibold mb-2"
+                className="block text-[color:var(--text)] font-semibold mb-2"
                 >
                 Your Name *
                 </label>
@@ -82,13 +82,13 @@ const Form = () => {
                 placeholder="John Doe"
                 className="
                     w-full
-                    bg-[#141414]
+                    bg-[color:var(--surface-2)]
                     text-lg
                     p-3
-                    text-white
-                    placeholder:text-white/50
-                    outline outline-1 outline-white/20
-                    focus:outline-white/70
+                    text-[color:var(--text)]
+                    placeholder:text-[color:var(--muted)]
+                    outline outline-1 outline-[color:var(--border)]
+                    focus:outline-[color:var(--text)]
                     transition
                 "
                 />
@@ -97,7 +97,7 @@ const Form = () => {
             <div className="flex-1">
                 <label 
                 htmlFor="email" 
-                className="block text-white font-semibold mb-2"
+                className="block text-[color:var(--text)] font-semibold mb-2"
                 >
                 Email Address *
                 </label>
@@ -112,13 +112,13 @@ const Form = () => {
                 placeholder="john@company.com"
                 className="
                     w-full
-                    bg-[#141414]
+                    bg-[color:var(--surface-2)]
                     text-lg
                     p-3
-                    text-white
-                    placeholder:text-white/50
-                    outline outline-1 outline-white/20
-                    focus:outline-white/70
+                    text-[color:var(--text)]
+                    placeholder:text-[color:var(--muted)]
+                    outline outline-1 outline-[color:var(--border)]
+                    focus:outline-[color:var(--text)]
                     transition
                 "
                 />
@@ -127,7 +127,7 @@ const Form = () => {
 
         <label 
             htmlFor="businessType" 
-            className="block text-white font-semibold "
+            className="block text-[color:var(--text)] font-semibold "
         >
             Business Type *
         </label>
@@ -137,19 +137,19 @@ const Form = () => {
             value={clientCredentials.businessType}
             onChange={handleChange}
             required
-            class="w-full max-w-full bg-[#141414] text-lg outline outline-white/20 p-3 focus:outline-white/70 focus:outline text-white/70"
+            class="w-full max-w-full bg-[color:var(--surface-2)] text-lg outline outline-[color:var(--border)] p-3 focus:outline-[color:var(--text)] focus:outline text-[color:var(--muted)]"
         >
-            <option value="" className='text-lg text-white/70'>Select your business type</option>
-            <option className='text-lg text-white/70'>Startup</option>
-            <option className='text-lg text-white/70'>Real Estate</option>
-            <option className='text-lg text-white/70'>SME / Established Business</option>
-            <option className='text-lg text-white/70'>Other</option>
+            <option value="" className='text-lg text-[color:var(--muted)]'>Select your business type</option>
+            <option className='text-lg text-[color:var(--muted)]'>Startup</option>
+            <option className='text-lg text-[color:var(--muted)]'>Real Estate</option>
+            <option className='text-lg text-[color:var(--muted)]'>SME / Established Business</option>
+            <option className='text-lg text-[color:var(--muted)]'>Other</option>
         </select>
 
 
         <label 
             htmlFor="service" 
-            className="block text-white font-semibold "
+            className="block text-[color:var(--text)] font-semibold "
         >
             What are you looking for *
         </label>
@@ -159,20 +159,20 @@ const Form = () => {
             value={clientCredentials.service}
             onChange={handleChange}
             required
-            class="w-full max-w-full bg-[#141414] text-lg outline outline-white/20 p-3 focus:outline-white/70 focus:outline text-white/70"
+            class="w-full max-w-full bg-[color:var(--surface-2)] text-lg outline outline-[color:var(--border)] p-3 focus:outline-[color:var(--text)] focus:outline text-[color:var(--muted)]"
         >
-            <option value="" className='text-lg text-white/70'>Select a service</option>
-            <option className='text-lg text-white/70'>New Strategic Website System</option>
-            <option className='text-lg text-white/70'>Conversion & Growth Optimization</option>
-            <option className='text-lg text-white/70'>Digital Strategy Consulting</option>
-            <option className='text-lg text-white/70'>Ongoing Optimization & Maintenance</option>
-            <option className='text-lg text-white/70'>Not sure yet</option>
+            <option value="" className='text-lg text-[color:var(--muted)]'>Select a service</option>
+            <option className='text-lg text-[color:var(--muted)]'>New Strategic Website System</option>
+            <option className='text-lg text-[color:var(--muted)]'>Conversion & Growth Optimization</option>
+            <option className='text-lg text-[color:var(--muted)]'>Digital Strategy Consulting</option>
+            <option className='text-lg text-[color:var(--muted)]'>Ongoing Optimization & Maintenance</option>
+            <option className='text-lg text-[color:var(--muted)]'>Not sure yet</option>
         </select>
 
 
         <label 
             htmlFor="timeline" 
-            className="block text-white font-semibold "
+            className="block text-[color:var(--text)] font-semibold "
         >
             Timeline
         </label>
@@ -182,19 +182,19 @@ const Form = () => {
             value={clientCredentials.timeline}
             onChange={handleChange}
             required
-            class="w-full max-w-full bg-[#141414] text-lg outline outline-white/20 p-3 focus:outline-white/70 focus:outline text-white/70"
+            class="w-full max-w-full bg-[color:var(--surface-2)] text-lg outline outline-[color:var(--border)] p-3 focus:outline-[color:var(--text)] focus:outline text-[color:var(--muted)]"
         >
-            <option value="" className='text-lg text-white/70'>Select a timeline</option>
-            <option className='text-lg text-white/70'>Urgent (1-2 Weeks)</option>
-            <option className='text-lg text-white/70'>Soon (1 month) </option>
-            <option className='text-lg text-white/70'> Planning (2-3 months) </option>
-            <option className='text-lg text-white/70'>Just exploring options</option>
+            <option value="" className='text-lg text-[color:var(--muted)]'>Select a timeline</option>
+            <option className='text-lg text-[color:var(--muted)]'>Urgent (1-2 Weeks)</option>
+            <option className='text-lg text-[color:var(--muted)]'>Soon (1 month) </option>
+            <option className='text-lg text-[color:var(--muted)]'> Planning (2-3 months) </option>
+            <option className='text-lg text-[color:var(--muted)]'>Just exploring options</option>
         </select>
 
 
         <label 
             htmlFor="message" 
-            className="block text-white font-semibold "
+            className="block text-[color:var(--text)] font-semibold "
         >
             Tell me about your project *
         </label>
@@ -205,14 +205,14 @@ const Form = () => {
             onChange={handleChange} 
             rows="5"
             placeholder='What business problem are you trying to solve? What are your goals?'
-            className='w-full bg-[#141414] borger text-lg outline outline-white/20 p-2 focus:outline-white/70 placeholder:text-white/70'
+            className='w-full bg-[color:var(--surface-2)] borger text-lg outline outline-[color:var(--border)] p-2 focus:outline-[color:var(--text)] placeholder:text-[color:var(--muted)] text-[color:var(--text)]'
         >
 
         </textarea>
 
         
         <button 
-            className='cursor-pointer flex items-center bg-white text-lg font-semibold text-[#0f0f0f] md:w-[200px] mt-4 justify-center gap-3 p-2 text-center '
+            className='cursor-pointer flex items-center bg-[color:var(--text)] text-lg font-semibold text-[color:var(--surface)] md:w-[200px] mt-4 justify-center gap-3 p-2 text-center '
         >
             Send Message
             <BsArrowRight  size={20}/>

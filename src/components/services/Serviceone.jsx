@@ -108,9 +108,9 @@ const Serviceone = () => {
   return (
         <div>
             {servicesData.map((service,index) => (
-                <div key={index} className='text-white/70 mb-20 md:mb-25'>
+                <div key={index} className='text-[color:var(--muted)] mb-20 md:mb-25'>
                     {iconMap[service.icon]}
-                    <h2 className='text-white text-3xl md:text-4xl font-bold my-5'>
+                    <h2 className='text-[color:var(--text)] text-3xl md:text-4xl font-bold my-5'>
                         {service.heading}
                     </h2>
                     <p className='italic md:text-2xl mb-8'>
@@ -120,12 +120,12 @@ const Serviceone = () => {
                         {service.text}
                     </p>
 
-                    <div className="text-white/70 my-10">
+                    <div className="text-[color:var(--muted)] my-10">
                         <h4 className='uppercase md:text-lg'>Ideal For</h4>
 
                         <ul className='space-y-2 mt-4'>
                             {service.target.map((targetItem, index) => (
-                                <li key={index} className="flex items-center  gap-2 text-white/70 md:text-lg">
+                                <li key={index} className="flex items-center gap-2 text-[color:var(--muted)] md:text-lg">
                                     <IoArrowForward size={15} />
                                     {targetItem}
                                 </li>
@@ -133,14 +133,14 @@ const Serviceone = () => {
                         </ul>
                     </div>
 
-                    <div className="w-full bg-[#0f0f0f] border border-white/20 mt-10 rounded-lg p-8">
+                    <div className="w-full bg-[color:var(--surface)] border border-[color:var(--border)] mt-10 rounded-lg p-8">
                         <h4 className="uppercase md:text-lg">What's Included</h4>
 
                         <ul className="space-y-3 mt-4">
                             {service.inclusions.map((inclusionItem, index) => (
                             <li
                                 key={index}
-                                className="flex items-start gap-3 text-white/70 md:text-lg"
+                                className="flex items-start gap-3 text-[color:var(--muted)] md:text-lg"
                             >
                                 <LuCircleCheck
                                 className="flex-shrink-0 mt-1"

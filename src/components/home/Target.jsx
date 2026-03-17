@@ -22,11 +22,11 @@ const targetData = [
 
 const Target = () => {
   return (
-    <section className='border-b border-white/20 bg-black'>
+    <section className='border-b border-[color:var(--border)] bg-[color:var(--bg)]'>
         <div className="px-4 md:px-6 py-22 md:py-25 w-full max-w-7xl m-auto">
-            <h2 className='text-white font-bold text-3xl md:text-4xl lg:text-5xl mb-8'>Built for growth-focused businesses</h2>
-            <p className='text-white/70 md:text-xl mb-12'>I partner with Startups, Real Estate firms, and SMEs in Malawi that are ready to level up their digital presence.</p>
-            <button className='outline-0 text-white  mb-15'>
+            <h2 className='text-[color:var(--text)] font-bold text-3xl md:text-4xl lg:text-5xl mb-8'>Built for growth-focused businesses</h2>
+            <p className='text-[color:var(--muted)] md:text-xl mb-12'>I partner with Startups, Real Estate firms, and SMEs in Malawi that are ready to level up their digital presence.</p>
+            <button className='outline-0 text-[color:var(--text)] mb-15'>
                 <Link to="/contact" className='flex gap-3 items-center'>
                   Let's talk strategy
                   <BsArrowRight size={20} />
@@ -41,14 +41,14 @@ const Target = () => {
                 <div key={index} className="flex items-start gap-6">
     
                   {/* Accent Line */}
-                  <div className="w-[2px] bg-gray-400 self-stretch"></div>
+                  <div className="w-[2px] bg-[color:var(--border)] self-stretch"></div>
 
                   {/* Text Content */}
                   <div>
-                    <h3 className="text-xl md:text-2xl  lg:text-4xl font-bold text-white mb-4">
+                    <h3 className="text-xl md:text-2xl  lg:text-4xl font-bold text-[color:var(--text)] mb-4">
                       {item.target}
                     </h3>
-                    <p className="text-gray-400 text-lg">
+                    <p className="text-[color:var(--muted)] text-lg">
                       {item.text}
                     </p>
                   </div>

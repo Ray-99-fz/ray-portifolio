@@ -36,12 +36,12 @@ const strategyData = [
 
 const Strategy = () => {
   return (
-        <section className='border-b border-white/20 bg-[#0f0f0f]'>
+        <section className='border-b border-[color:var(--border)] bg-[color:var(--surface)]'>
         <div className="px-4 md:px-6 py-22 md:py-25 w-full max-w-7xl m-auto">
-            <h2 className='text-white font-bold text-2xl md:text-3xl lg:text-4xl mb-6 text-center'>
+            <h2 className='text-[color:var(--text)] font-bold text-2xl md:text-3xl lg:text-4xl mb-6 text-center'>
                 Strategic Process
             </h2>
-            <p className='text-white/70 md:text-xl mb-12 text-center'>
+            <p className='text-[color:var(--muted)] md:text-xl mb-12 text-center'>
                 Every engagement follows the 6-Hat Strategic Framework™ to ensure thorough analysis and effective execution.
             </p>
 
@@ -52,18 +52,18 @@ const Strategy = () => {
                 <div key={index} className="flex items-start gap-6">
     
                   {/* Accent Line */}
-                  <div className="w-[2px] bg-gray-400 self-stretch"></div>
+                  <div className="w-[2px] bg-[color:var(--border)] self-stretch"></div>
 
                   {/* Text Content */}
                   <div>
-                    <p className='text-white/70 font-bold'>
+                    <p className='text-[color:var(--muted)] font-bold'>
                         {`0${index + 1}`}
                     </p>
 
-                    <h3 className="text-lg md:text-xl  lg:text-2xl font-bold text-white my-2">
+                    <h3 className="text-lg md:text-xl  lg:text-2xl font-bold text-[color:var(--text)] my-2">
                       {item.title}
                     </h3>
-                    <p className="text-gray-400 text-lg">
+                    <p className="text-[color:var(--muted)] text-lg">
                       {item.text}
                     </p>
                   </div>

@@ -26,12 +26,12 @@ const visionData = [
 
 const Vision = () => {
   return (
-    <section className='border-b border-white/20 bg-black'>
+    <section className='border-b border-[color:var(--border)] bg-[color:var(--bg)]'>
         <div className="px-4 md:px-6 py-22 md:py-25 w-full max-w-7xl m-auto">
-            <h2 className='text-white font-bold text-2xl md:text-3xl lg:text-4xl'>
+            <h2 className='text-[color:var(--text)] font-bold text-2xl md:text-3xl lg:text-4xl'>
                 Long-Term Vision
             </h2>
-            <p className='text-white/70 md:text-xl mt-8'>
+            <p className='text-[color:var(--muted)] md:text-xl mt-8'>
                 Building authority through strategic thinking and measurable results.    
             </p>
 
@@ -44,9 +44,9 @@ const Vision = () => {
                         w-12 h-12
                         flex-shrink-0
                         rounded-full
-                        bg-[#0f0f0f]
-                        outline outline-white/20
-                        text-white
+                        bg-[color:var(--surface)]
+                        outline outline-[color:var(--border)]
+                        text-[color:var(--text)]
                         font-bold
                         text-lg
                         flex items-center justify-center
@@ -55,10 +55,10 @@ const Vision = () => {
                     </div>
                     
                     <div className="flex flex-col gap-2">
-                        <h4 className="text-white font-bold text-lg md:text-2xl">
+                        <h4 className="text-[color:var(--text)] font-bold text-lg md:text-2xl">
                         {item.title}
                         </h4>
-                        <p className="text-white/70">
+                        <p className="text-[color:var(--muted)]">
                         {item.text}
                         </p>
                     </div>

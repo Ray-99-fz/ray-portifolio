@@ -4,17 +4,27 @@ import Footer from '../components/Footer'
 import Header from '../components/contact/Header'
 import Contactdetails from '../components/contact/Contactdetails'
 import Followup from '../components/contact/Followup'
+import Reveal from '../components/Reveal'
+import PageTransition from '../components/PageTransition'
 
 
 const Contact = () => {
   return (
-    <section>
-      <Navbar />
-      <Header />
-      <Contactdetails />
-      <Followup />
-      <Footer />
-    </section>
+    <PageTransition>
+      <section>
+        <Navbar />
+        <Reveal>
+          <Header />
+        </Reveal>
+        <Reveal>
+          <Contactdetails />
+        </Reveal>
+        <Reveal>
+          <Followup />
+        </Reveal>
+        <Footer />
+      </section>
+    </PageTransition>
   )
 }
 

@@ -55,20 +55,20 @@ const capabilityData = [
 
 const Capabilities = () => {
   return (
-    <section className='border-b border-white/20 bg-black'>
+    <section className='border-b border-[color:var(--border)] bg-[color:var(--bg)]'>
         <div className="px-4 md:px-6 py-22 md:py-25 w-full max-w-7xl m-auto">
-            <h2 className='text-white font-bold text-2xl md:text-3xl lg:text-4xl text-center'>Core Capabilities</h2>
+            <h2 className='text-[color:var(--text)] font-bold text-2xl md:text-3xl lg:text-4xl text-center'>Core Capabilities</h2>
 
             {/* capability grid */}
             <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 mt-15">
                 {capabilityData.map((item, index) => ( 
-                    <div key={index} className="border flex flex-col gap-5 border-white/20 p-4 bg-[#0f0f0f]">
-                        <div key={index} className="w-[90%] m-auto flex flex-col gap-4 text-white/70">
+                    <div key={index} className="border flex flex-col gap-5 border-[color:var(--border)] p-4 bg-[color:var(--surface)]">
+                        <div key={index} className="w-[90%] m-auto flex flex-col gap-4 text-[color:var(--muted)]">
                             {iconMap[item.icon]}
-                            <h2 className='text-white font-bold text-2xl'>
+                            <h2 className='text-[color:var(--text)] font-bold text-2xl'>
                                 {item.title}
                             </h2>
-                            <p className='text-white/70 md:text-xl'>
+                            <p className='text-[color:var(--muted)] md:text-xl'>
                                 {item.desc}
                             </p>
                         </div> 

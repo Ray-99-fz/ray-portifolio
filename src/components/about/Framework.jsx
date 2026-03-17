@@ -54,30 +54,30 @@ const frameworkData = [
 
 const Framework = () => {
   return (
-    <section className='border-b border-white/20 bg-black'>
+    <section className='border-b border-[color:var(--border)] bg-[color:var(--bg)]'>
         <div className="px-4 md:px-6 py-22 md:py-25 w-full max-w-7xl m-auto">
-            <h2 className='text-white font-bold text-2xl md:text-3xl lg:text-4xl'>
+            <h2 className='text-[color:var(--text)] font-bold text-2xl md:text-3xl lg:text-4xl'>
                 The 6-Hat Strategic Framework™
             </h2>
-            <p className='text-white/70 md:text-xl mt-8'>
+            <p className='text-[color:var(--muted)] md:text-xl mt-8'>
                 This isn't just theory—it's a practical methodology I integrate into every project, bringing structure to complexity and clarity to decision-making.    
             </p>
 
                         {/* framework grid */}
             <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 mt-15">
                 {frameworkData.map((item, index) => ( 
-                    <div key={index} className="border flex flex-col gap-5 border-white/20 p-4 bg-[#0f0f0f]">
-                        <div style={{backgroundColor: item.color}} className="  rounded-4xl border border-white/20 flex items-center justify-center gap-2 py-2 px-4 w-fit">
-                            <div style={{backgroundColor: item.color}} className=" rounded-full w-5 h-5 outline outline-black"></div>
-                            <h4 style={{color: item.textColor}} className='font-semibold text-[#0f0f0f] text-lg'>
+                    <div key={index} className="border flex flex-col gap-5 border-[color:var(--border)] p-4 bg-[color:var(--surface)]">
+                        <div style={{backgroundColor: item.color}} className="rounded-4xl border border-[color:var(--border)] flex items-center justify-center gap-2 py-2 px-4 w-fit">
+                            <div style={{backgroundColor: item.color}} className="rounded-full w-5 h-5 outline outline-[color:var(--border)]"></div>
+                            <h4 style={{color: item.textColor}} className='font-semibold text-lg'>
                                 {item.tag}
                             </h4>
                         </div>
 
-                        <h3 className="text-lg md:text-xl  lg:text-2xl font-bold text-white">
+                        <h3 className="text-lg md:text-xl  lg:text-2xl font-bold text-[color:var(--text)]">
                             {item.title}
                         </h3>
-                        <p className="text-gray-400 text-lg">
+                        <p className="text-[color:var(--muted)] text-lg">
                             {item.text}
                         </p>
                     </div>

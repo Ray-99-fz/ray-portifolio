@@ -33,19 +33,19 @@ const contactDetailsData = [
 
 const Contactdetails = () => {
   return (
-    <section className='border-b border-white/20 bg-black'>
+    <section className='border-b border-[color:var(--border)] bg-[color:var(--bg)]'>
         <div className="px-4 md:px-6 py-22 md:py-25 w-full max-w-7xl m-auto">
-            <h3 className='text-white text-xl mb-4 font-bold'>Get in Touch</h3>
-            <p className='text-white/70'>Reach out directly or fill out the form. I respond to all serious inquiries within 24-48 hours.</p>
+            <h3 className='text-[color:var(--text)] text-xl mb-4 font-bold'>Get in Touch</h3>
+            <p className='text-[color:var(--muted)]'>Reach out directly or fill out the form. I respond to all serious inquiries within 24-48 hours.</p>
 
             <div className="mt-8 flex flex-col gap-8">
                 {contactDetailsData.map((item, index) => ( 
-                    <div key={index} className="flex gap-4 text-white/70">
+                    <div key={index} className="flex gap-4 text-[color:var(--muted)]">
                         {iconMap[item.icon]}
 
                         <div className="">
-                            <h4 className='text-white font-bold text-lg md:text-xl'> {item.title} </h4>
-                            <p className='text-white/70 cursor-pointer md:text-lg'> {item.detail} </p>
+                            <h4 className='text-[color:var(--text)] font-bold text-lg md:text-xl'> {item.title} </h4>
+                            <p className='text-[color:var(--muted)] cursor-pointer md:text-lg'> {item.detail} </p>
                         </div>
                     </div>
                 ))}
@@ -53,8 +53,8 @@ const Contactdetails = () => {
 
 
             {/* Ideal List */}
-            <div className="w-full bg-[#0f0f0f] border border-white/20 mt-10 rounded-lg p-8">
-                <h3 className='text-white font-bold md:text-2xl'>Ideal for:</h3>
+            <div className="w-full bg-[color:var(--surface)] border border-[color:var(--border)] mt-10 rounded-lg p-8">
+                <h3 className='text-[color:var(--text)] font-bold md:text-2xl'>Ideal for:</h3>
 
                 {/* List */}
                 <ul className="space-y-2 mt-4">
@@ -65,10 +65,10 @@ const Contactdetails = () => {
                         "Businesses wanting strategic digital partners",
                         "Projects requiring analytical thinking"
                     ].map((item, index) => (
-                        <li key={index} className="flex items-start  gap-2 text-white/70 md:text-lg">
+                        <li key={index} className="flex items-start gap-2 text-[color:var(--muted)] md:text-lg">
                         
                         {/* Custom bullet */}
-                        <span className="mt-2 h-1.5 w-1.5 rounded-full bg-white/70"></span>
+                        <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[color:var(--muted)]"></span>
                         
                         <span>{item}</span>
                         </li>
@@ -77,8 +77,8 @@ const Contactdetails = () => {
             </div>
 
             {/* Not Ideal List */}
-            <div className="w-full bg-[#0f0f0f] border border-white/20 mt-10 rounded-lg p-8">
-                <h3 className='text-white font-bold md:text-2xl'>Not Ideal for:</h3>
+            <div className="w-full bg-[color:var(--surface)] border border-[color:var(--border)] mt-10 rounded-lg p-8">
+                <h3 className='text-[color:var(--text)] font-bold md:text-2xl'>Not Ideal for:</h3>
 
                 {/* List */}
                 <ul className="space-y-2 mt-4">
@@ -88,10 +88,10 @@ const Contactdetails = () => {
                         "Price-focused buyers",
                         "Projects requiring immediate backend complexity"
                     ].map((item, index) => (
-                        <li key={index} className="flex items-start  gap-2 text-white/70 md:text-lg">
+                        <li key={index} className="flex items-start gap-2 text-[color:var(--muted)] md:text-lg">
                         
                         {/* Custom bullet */}
-                        <span className="mt-2 h-1.5 w-1.5 rounded-full bg-white/70"></span>
+                        <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[color:var(--muted)]"></span>
                         
                         <span>{item}</span>
                         </li>
@@ -101,9 +101,9 @@ const Contactdetails = () => {
 
 
             {/* Form */}
-            <div className="w-full bg-[#0f0f0f] border border-white/20 my-10 rounded-lg p-8">
+            <div className="w-full bg-[color:var(--surface)] border border-[color:var(--border)] my-10 rounded-lg p-8">
                 <Form />
-                <small className='text-white/70 lg:text-lg mt-12'>* Required fields. Your information is confidential and will only be used to discuss your project.</small>
+                <small className='text-[color:var(--muted)] lg:text-lg mt-12'>* Required fields. Your information is confidential and will only be used to discuss your project.</small>
             </div>
             
             
