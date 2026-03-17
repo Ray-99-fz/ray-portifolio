@@ -5,7 +5,7 @@ const RevealComponent = ({
   children,
   className,
   y = 20,
-  duration = 0.5,
+  duration = 0.7,
   delay = 0,
   amount = 0.05,
 }) => {
